@@ -1,4 +1,4 @@
-#Minimal Angular Application Skeleton
+#Minimal Angular Application
 
 This repository is about a minimal web application structure implemented with Angular framework, Material Design 
 principles, Node.js and Express(for the support of html5mode). The basic rational behind this 
