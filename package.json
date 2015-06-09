@@ -1,7 +1,7 @@
 {
-  "name": "angular_app_skeleton",
+  "name": "angular_app_mock",
   "version": "0.0.1",
-  "description": "angular app skeleton",
+  "description": "angular app mock",
   "main": "server.js",
   "directories": {
     "test": "tests"

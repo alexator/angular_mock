@@ -1,6 +1,6 @@
 {
-  "name": "AngularSPA",
-  "description": "An SPA framework",
+  "name": "angular_app_mock",
+  "description": "angular app mock",
   "version": "0.0.1",
   "homepage": "",
   "license": "MIT",
@@ -9,10 +9,7 @@
     "angular": "latest",
     "angular-ui-router": "latest",
     "normalize.css": "latest",
-    "angular-bootstrap": "latest",
-    "bootstrap": "latest",
     "angular-material": "~0.9.8",
-    "angular-messages": "~1.4.0",
-    "material-design-icons": "~2.0.0"
+    "angular-messages": "~1.4.0"
   }
 }
