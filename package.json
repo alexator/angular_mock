@@ -1,0 +1,21 @@
+{
+  "name": "angular_app_skeleton",
+  "version": "0.0.1",
+  "description": "angular app skeleton",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "author": "Alexandros Georgantas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

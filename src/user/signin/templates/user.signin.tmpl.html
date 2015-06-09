@@ -1,0 +1,23 @@
+<div layout="row" layout-align="center start" layout-fill class="margin_top">
+	<md-card flex="45" flex-sm="80">
+		<md-card-content>
+			<h1 class="md-title">Sign In</h1>
+			<form name="userForm" ng-submit="signIn_vm.signIn()">
+				<div layout="column" layout-sm="column">
+
+					<md-input-container flex>
+						<label>Username</label>
+						<input ng-model="signIn_vm.user.email" placeholder="Enter email">
+					</md-input-container>
+					<md-input-container flex>
+						<label>Password</label>
+						<input type="password" ng-model="signIn_vm.user.password">
+					</md-input-container>
+				</div>
+				<div layout="row" layout-align="end center" layout-align-sm="center center">
+					<md-button type="submit" class="md-raised md-primary">SignIn</md-button>
+				</div>
+			</form>
+		</md-card-content>
+	</md-card>
+</div>

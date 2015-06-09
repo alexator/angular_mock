@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="sampleApp">
+<head lang="en">
+	<base href="/">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Sample Application</title>
+	<meta name="description" content="Sample App">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendors/normalize.css/normalize.css">
+	<link rel="stylesheet" href="vendors/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body ng-controller="universeController as uv_vm">
+
+	<div ui-view="menu_area"></div>
+	<md-content layout="column" layout-align="start center" layout-padding ui-view="content_area" style="{{uv_vm.height}}"></md-content>
+
+
+	<!-- Scripts Injection-->
+
+	<script src="vendors/angular/angular.js"></script>
+	<script src="vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="vendors/angular-animate/angular-animate.min.js"></script>
+	<script src="vendors/angular-aria/angular-aria.min.js"></script>
+	<script src="vendors/angular-material/angular-material.min.js"></script>
+	<script src="vendors/angular-messages/angular-messages.min.js"></script>
+
+	<!-- Main application module-->
+	<script src="app.module.js"></script>
+
+	<!-- Dashboard module-->
+	<script src="dashboard/dashboard.module.js"></script>
+	<script src="dashboard/controllers/dashboard.controller.js"></script>
+
+	<!-- Menu module-->
+	<script src="menu/menu.module.js"></script>
+	<script src="menu/controllers/menuController.js"></script>
+
+	<!-- User signin module-->
+	<script src="user/signin/user.signin.module.js"></script>
+	<script src="user/signin/controllers/user.signin.controller.js"></script>
+
+	<!-- User signup module-->
+	<script src="user/signup/user.signup.module.js"></script>
+	<script src="user/signup/controllers/user.signup.controller.js"></script>
+
+	<script src="common/services/currentUser.js"></script>
+
+</body>
+</html>
