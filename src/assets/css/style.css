@@ -1,15 +1,11 @@
-body {
-    background-color: #EEEEEE;
-}
-md-content {
-    background-color: #EEEEEE;
-}
 .centered {
     text-align: center;
 }
 .justified {
     text-align: justify;
 }
-.margin_top {
-    margin-top: 40px;
+.s64 {
+    height: 64px;
+    width: 64px;
+    border-radius: 99%;
 }

@@ -12,23 +12,24 @@
 		.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', Configuration])
 		.run(['$rootScope', '$state', 'currentUser', function ($rootScope, $state, currentUser) {
 			$rootScope.$on('$stateChangeStart', function (event, toState) {
-				var requireLogin = toState.data.requireLogin;
+				var requireLogin = false;
+
+				if(angular.isDefined(toState.data)) {
+
+					requireLogin = toState.data.requireLogin;
 
 
-				if (requireLogin && !currentUser.getUser()) {
-					event.preventDefault();
-					$state.go('start.signin');
-				}
-				if(!requireLogin && currentUser.getUser()) {
-					event.preventDefault();
-					$state.go('app.home');
+					if (requireLogin && !currentUser.getUser ()) {
+						event.preventDefault ();
+						$state.go ('start.signin');
+					}
+					if (!requireLogin && currentUser.getUser ()) {
+						event.preventDefault ();
+						$state.go ('app.home');
+					}
 				}
 			});
 
-		}])
-		.controller('universeController', ['$window', function($window) {
-			var vm = this;
-			vm.height = "height: " + ($window.innerHeight - 70) + "px;";
 		}]);
 
 	function Configuration($stateProvider, $urlRouterProvider, $locationProvider) {

@@ -12,11 +12,14 @@
 	<link rel="stylesheet" href="vendors/angular-material/angular-material.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body ng-controller="universeController as uv_vm">
-
-	<div ui-view="menu_area"></div>
-	<md-content layout="column" layout-align="start center" layout-padding ui-view="content_area" style="{{uv_vm.height}}"></md-content>
-
+<body layout="row">
+	<div ui-view="sidenav_area"></div>
+	<div layout="column" class="relative" layout-fill role="main">
+		<div ui-view="toolbar_area"></div>
+		<md-content flex md-scroll-y>
+			<div ui-view="content_area" layout="column" layout-fill layout-padding></div>
+		</md-content>
+	</div>
 
 	<!-- Scripts Injection-->
 
@@ -33,10 +36,10 @@
 	<!-- Dashboard module-->
 	<script src="dashboard/dashboard.module.js"></script>
 	<script src="dashboard/controllers/dashboard.controller.js"></script>
-
-	<!-- Menu module-->
-	<script src="menu/menu.module.js"></script>
-	<script src="menu/controllers/menuController.js"></script>
+	<script src="dashboard/sidenav/sidenav.module.js"></script>
+	<script src="dashboard/sidenav/controllers/sidenav.controller.js"></script>
+	<script src="dashboard/toolbar/toolbar.module.js"></script>
+	<script src="dashboard/toolbar/controllers/toolbar.controller.js"></script>
 
 	<!-- User signin module-->
 	<script src="user/signin/user.signin.module.js"></script>

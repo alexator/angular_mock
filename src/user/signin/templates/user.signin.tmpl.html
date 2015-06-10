@@ -1,5 +1,5 @@
-<div layout="row" layout-align="center start" layout-fill class="margin_top">
-	<md-card flex="45" flex-sm="80">
+<div role="tabpanel" layout="row" layout-align="center center">
+	<md-card flex-gt-sm="60" flex-gt-md="50">
 		<md-card-content>
 			<h1 class="md-title">Sign In</h1>
 			<form name="userForm" ng-submit="signIn_vm.signIn()">
@@ -7,7 +7,7 @@
 
 					<md-input-container flex>
 						<label>Username</label>
-						<input ng-model="signIn_vm.user.email" placeholder="Enter email">
+						<input ng-model="signIn_vm.user.username" placeholder="Enter email">
 					</md-input-container>
 					<md-input-container flex>
 						<label>Password</label>
