@@ -8,7 +8,7 @@ etc.).
 
 ##Screenshot
 
-![Demo App](https://github.com/alexator/angular_mock/src/assets/img/screenshot.png)
+![Demo App](https://raw.githubusercontent.com/alexator/angular_mock/master/src/assets/img/screenshot.png?raw=true)
 
 ## Demo of the application (Better use Fireforx for now..)
 
